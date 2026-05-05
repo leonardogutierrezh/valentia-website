@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Valentia Software</title>
+  <meta name="description" content="Talk to the Valentia team. Book a demo or get a tailored quote." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">V</span>
+        <span class="logo-text">Valentia</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="features.html">Modules</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Book a demo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's <span class="gradient-text">talk.</span></h1>
+        <p class="lead">
+          Tell us about your portfolio and current PMS. We'll come back within one business day with a tailored next step.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>What to expect</h3>
+            <ul class="check-list">
+              <li>Reply within 24 hours, business days</li>
+              <li>30-min discovery call to understand your setup</li>
+              <li>Live demo on a property similar to yours</li>
+              <li>Custom quote within 1–2 days after the demo</li>
+            </ul>
+            <div class="contact-direct">
+              <h4>Or reach us directly</h4>
+              <p><a href="mailto:hello@valentia.software">hello@valentia.software</a></p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                <span>Company</span>
+                <input type="text" name="company" required />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Work email</span>
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                <span>Portfolio size</span>
+                <select name="portfolio">
+                  <option value="">Select…</option>
+                  <option>Under 50 units</option>
+                  <option>50–200 units</option>
+                  <option>200–500 units</option>
+                  <option>500+ units</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span>Current PMS</span>
+              <input type="text" name="pms" placeholder="Guesty, Hostaway, Streamline, custom…" />
+            </label>
+            <label>
+              <span>What are you trying to solve?</span>
+              <textarea name="message" rows="5" placeholder="Tell us a bit about your situation…"></textarea>
+            </label>
+            <fieldset class="form-modules">
+              <legend>Modules you're interested in</legend>
+              <label class="checkbox"><input type="checkbox" name="modules" value="Operations" /> Operations</label>
+              <label class="checkbox"><input type="checkbox" name="modules" value="Marketing" /> Marketing</label>
+              <label class="checkbox"><input type="checkbox" name="modules" value="Finance" /> Finance</label>
+            </fieldset>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send message</button>
+            <p class="form-note" id="formNote" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-mark">V</span>
+          <span class="logo-text">Valentia</span>
+        </a>
+        <p class="footer-tag">Property management, extended.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Product</h4>
+          <a href="features.html#operations">Operations</a>
+          <a href="features.html#marketing">Marketing</a>
+          <a href="features.html#finance">Finance</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Book a demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Valentia Software. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

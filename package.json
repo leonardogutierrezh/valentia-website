@@ -1,0 +1,10 @@
+{
+  "name": "valentia-website",
+  "version": "0.1.0",
+  "description": "Valentia Software corporate website — static HTML/CSS/JS.",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "serve": "npx serve ."
+  }
+}
