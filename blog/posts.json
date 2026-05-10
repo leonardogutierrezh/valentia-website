@@ -2,9 +2,15 @@
   "posts": [
     {
       "slug": "property-manager-necesita-mas-que-pms",
-      "language": "es",
-      "title": "Por qué un property manager necesita algo más que un PMS",
-      "excerpt": "Un PMS es esencial para gestionar reservas y operaciones, pero un property manager profesional necesita algo más: KPIs, reporting, rentabilidad, propietarios y control de negocio.",
+      "languages": ["es", "en"],
+      "title": {
+        "es": "Por qué un property manager necesita algo más que un PMS",
+        "en": "Why a property manager needs more than a PMS"
+      },
+      "excerpt": {
+        "es": "Un PMS es esencial para gestionar reservas y operaciones, pero un property manager profesional necesita algo más: KPIs, reporting, rentabilidad, propietarios y control de negocio.",
+        "en": "A PMS is essential for managing reservations and operations, but a professional property manager needs more: KPIs, reporting, profitability, owners, and business control."
+      },
       "date": "2026-05-10",
       "readingMinutes": 8,
       "tags": []
