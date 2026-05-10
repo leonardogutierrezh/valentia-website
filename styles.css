@@ -1077,9 +1077,15 @@ img, svg { max-width: 100%; display: block; }
   letter-spacing: 0.06em;
   padding: 2px 7px;
   border-radius: 999px;
+  background: var(--bg-alt);
+  color: var(--muted);
+  text-transform: uppercase;
+  border: 1px solid var(--line);
+}
+.post-lang-badge-active {
   background: var(--teal-light);
   color: var(--navy);
-  text-transform: uppercase;
+  border-color: transparent;
 }
 
 .posts-empty { text-align: center; padding: 24px 0; }
