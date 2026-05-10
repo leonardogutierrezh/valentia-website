@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valentia Software — Extensions for Property Management Systems</title>
-  <meta name="description" content="Operations, Marketing and Finance modules that extend your property management system. Built for property managers who want to scale without changing platforms." />
+  <title data-i18n="meta.home.title">Valentia Software — Property Management Extensions</title>
+  <meta name="description" data-i18n="meta.home.desc" content="Operations, Marketing and Finance modules that extend your property management system. Built for property managers who want to scale without changing platforms." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,16 +15,21 @@
   <header class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <span class="logo-mark">V</span>
-        <span class="logo-text">Valentia</span>
+        <img src="logo.svg" alt="Valentia" width="36" height="36" />
+        <span class="logo-text">VALENTIA</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html" class="active">Home</a>
-        <a href="features.html">Modules</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+        <a href="features.html" data-i18n="nav.modules">Modules</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a href="contact.html" class="btn btn-primary nav-cta">Book a demo</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta">Book a demo</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -34,20 +39,22 @@
   <main>
     <section class="hero">
       <div class="container">
-        <div class="hero-badge">Built for property managers</div>
-        <h1>Extend your PMS. <span class="gradient-text">Don't replace it.</span></h1>
-        <p class="hero-sub">
-          Valentia plugs Operations, Marketing and Finance modules straight into your existing property management system —
-          so your team gets the workflows you need without a migration.
+        <div class="hero-badge" data-i18n="home.badge">Built for property managers</div>
+        <h1>
+          <span data-i18n="home.h1.a">Extend your PMS.</span>
+          <span class="gradient-text" data-i18n="home.h1.b">Don't replace it.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="home.sub">
+          Valentia plugs Operations, Marketing and Finance modules straight into your existing property management system — so your team gets the workflows you need without a migration.
         </p>
         <div class="hero-cta">
-          <a href="contact.html" class="btn btn-primary btn-lg">Book a demo</a>
-          <a href="features.html" class="btn btn-ghost btn-lg">See modules →</a>
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="home.cta.primary">Book a demo</a>
+          <a href="features.html" class="btn btn-ghost btn-lg" data-i18n="home.cta.secondary">See modules →</a>
         </div>
         <div class="hero-meta">
-          <div><strong>3</strong><span>modular extensions</span></div>
-          <div><strong>1</strong><span>unified data layer</span></div>
-          <div><strong>0</strong><span>migration headaches</span></div>
+          <div><strong>3</strong><span data-i18n="home.meta.modules">modular extensions</span></div>
+          <div><strong>1</strong><span data-i18n="home.meta.layer">unified data layer</span></div>
+          <div><strong>0</strong><span data-i18n="home.meta.migration">migration headaches</span></div>
         </div>
       </div>
       <div class="hero-bg" aria-hidden="true"></div>
@@ -56,34 +63,34 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">Modules</span>
-          <h2>Three layers, one platform</h2>
-          <p>Pick what you need. Plug it in. Each module works standalone or together with the rest.</p>
+          <span class="eyebrow" data-i18n="home.modules.eyebrow">Modules</span>
+          <h2 data-i18n="home.modules.h2">Three layers, one platform</h2>
+          <p data-i18n="home.modules.p">Pick what you need. Plug it in. Each module works standalone or together with the rest.</p>
         </div>
         <div class="grid grid-3">
           <article class="card">
             <div class="card-icon ops">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
             </div>
-            <h3>Operations</h3>
-            <p>Protocols, owner workflows, and cleaning ops automated end-to-end. Less coordination overhead, fewer dropped balls.</p>
-            <a href="features.html#operations" class="card-link">Explore Operations →</a>
+            <h3 data-i18n="modules.ops.title">Operations</h3>
+            <p data-i18n="home.modules.ops.desc">Protocols, owner workflows, and cleaning ops automated end-to-end. Less coordination overhead, fewer dropped balls.</p>
+            <a href="features.html#operations" class="card-link" data-i18n="home.modules.ops.link">Explore Operations →</a>
           </article>
           <article class="card">
             <div class="card-icon marketing">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
             </div>
-            <h3>Marketing</h3>
-            <p>Lead capture, owner acquisition campaigns, and LinkedIn automation. Turn your portfolio into a growth engine.</p>
-            <a href="features.html#marketing" class="card-link">Explore Marketing →</a>
+            <h3 data-i18n="modules.marketing.title">Marketing</h3>
+            <p data-i18n="home.modules.marketing.desc">Lead capture, owner acquisition campaigns, and LinkedIn automation. Turn your portfolio into a growth engine.</p>
+            <a href="features.html#marketing" class="card-link" data-i18n="home.modules.marketing.link">Explore Marketing →</a>
           </article>
           <article class="card">
             <div class="card-icon finance">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
             </div>
-            <h3>Finance</h3>
-            <p>Owner statements, fee reconciliation, and reporting that match how property managers actually run the books.</p>
-            <a href="features.html#finance" class="card-link">Explore Finance →</a>
+            <h3 data-i18n="modules.finance.title">Finance</h3>
+            <p data-i18n="home.modules.finance.desc">Owner statements, fee reconciliation, and reporting that match how property managers actually run the books.</p>
+            <a href="features.html#finance" class="card-link" data-i18n="home.modules.finance.link">Explore Finance →</a>
           </article>
         </div>
       </div>
@@ -93,33 +100,32 @@
       <div class="container">
         <div class="split">
           <div class="split-text">
-            <span class="eyebrow">Why Valentia</span>
-            <h2>Stop choosing between flexibility and your stack.</h2>
-            <p>
-              Most PMS platforms are great at the basics and weak everywhere else. Replacing them is expensive,
-              risky, and breaks what already works. Valentia adds the missing layers — without forcing you to start over.
+            <span class="eyebrow" data-i18n="home.why.eyebrow">Why Valentia</span>
+            <h2 data-i18n="home.why.h2">Stop choosing between flexibility and your stack.</h2>
+            <p data-i18n="home.why.p">
+              Most PMS platforms are great at the basics and weak everywhere else. Replacing them is expensive, risky, and breaks what already works. Valentia adds the missing layers — without forcing you to start over.
             </p>
             <ul class="check-list">
-              <li>Drop-in modules — no platform migration</li>
-              <li>Two-way sync with your existing PMS</li>
-              <li>Bilingual UI (EN / ES) out of the box</li>
-              <li>Audit-ready financial reporting</li>
+              <li data-i18n="home.why.l1">Drop-in modules — no platform migration</li>
+              <li data-i18n="home.why.l2">Two-way sync with your existing PMS</li>
+              <li data-i18n="home.why.l3">Bilingual UI (EN / ES) out of the box</li>
+              <li data-i18n="home.why.l4">Audit-ready financial reporting</li>
             </ul>
           </div>
           <div class="split-visual">
             <div class="stack">
-              <div class="stack-item stack-pms">Your PMS</div>
+              <div class="stack-item stack-pms" data-i18n="home.stack.pms">Your PMS</div>
               <div class="stack-arrow">↕</div>
               <div class="stack-item stack-valentia">
-                <span>Valentia layer</span>
+                <span data-i18n="home.stack.valentia">Valentia layer</span>
                 <div class="stack-modules">
-                  <span>Operations</span>
-                  <span>Marketing</span>
-                  <span>Finance</span>
+                  <span data-i18n="modules.ops.title">Operations</span>
+                  <span data-i18n="modules.marketing.title">Marketing</span>
+                  <span data-i18n="modules.finance.title">Finance</span>
                 </div>
               </div>
               <div class="stack-arrow">↕</div>
-              <div class="stack-item stack-team">Your team & owners</div>
+              <div class="stack-item stack-team" data-i18n="home.stack.team">Your team & owners</div>
             </div>
           </div>
         </div>
@@ -129,25 +135,41 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">How it works</span>
-          <h2>Live in weeks, not quarters</h2>
+          <span class="eyebrow" data-i18n="home.how.eyebrow">How it works</span>
+          <h2 data-i18n="home.how.h2">Live in weeks, not quarters</h2>
         </div>
         <div class="grid grid-3 steps">
           <div class="step">
             <div class="step-num">01</div>
-            <h3>Connect</h3>
-            <p>We integrate Valentia with your existing PMS through API or hybrid sync — no rip-and-replace.</p>
+            <h3 data-i18n="home.how.s1.title">Connect</h3>
+            <p data-i18n="home.how.s1.desc">We integrate Valentia with your existing PMS through API or hybrid sync — no rip-and-replace.</p>
           </div>
           <div class="step">
             <div class="step-num">02</div>
-            <h3>Configure</h3>
-            <p>Pick your modules, define protocols, import owner data, and map your fee structure.</p>
+            <h3 data-i18n="home.how.s2.title">Configure</h3>
+            <p data-i18n="home.how.s2.desc">Pick your modules, define protocols, import owner data, and map your fee structure.</p>
           </div>
           <div class="step">
             <div class="step-num">03</div>
-            <h3>Run</h3>
-            <p>Your team operates from one extended platform. Owners get cleaner reports. You get the leverage.</p>
+            <h3 data-i18n="home.how.s3.title">Run</h3>
+            <p data-i18n="home.how.s3.desc">Your team operates from one extended platform. Owners get cleaner reports. You get the leverage.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header section-header-row">
+          <div>
+            <span class="eyebrow" data-i18n="home.blog.eyebrow">Blog</span>
+            <h2 data-i18n="home.blog.h2">Latest articles</h2>
+            <p data-i18n="home.blog.p">Ideas, frameworks, and lessons from running property management at scale.</p>
+          </div>
+          <a href="blog.html" class="btn btn-ghost" data-i18n="home.blog.viewall">View all →</a>
+        </div>
+        <div id="homeLatest" class="grid grid-3 posts-grid">
+          <p class="muted" data-i18n="blog.loading">Loading posts…</p>
         </div>
       </div>
     </section>
@@ -155,10 +177,10 @@
     <section class="cta-band">
       <div class="container cta-inner">
         <div>
-          <h2>See it on your portfolio.</h2>
-          <p>30-minute demo. We'll show you the modules running on a property similar to yours.</p>
+          <h2 data-i18n="home.ctaband.h2">See it on your portfolio.</h2>
+          <p data-i18n="home.ctaband.p">30-minute demo. We'll show you the modules running on a property similar to yours.</p>
         </div>
-        <a href="contact.html" class="btn btn-primary btn-lg">Book a demo</a>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="nav.cta">Book a demo</a>
       </div>
     </section>
   </main>
@@ -167,31 +189,43 @@
     <div class="container footer-inner">
       <div>
         <a href="index.html" class="logo">
-          <span class="logo-mark">V</span>
-          <span class="logo-text">Valentia</span>
+          <img src="logo.svg" alt="Valentia" width="36" height="36" />
+          <span class="logo-text">VALENTIA</span>
         </a>
-        <p class="footer-tag">Property management, extended.</p>
+        <p class="footer-tag" data-i18n="footer.tag">Property management, extended.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/valent%C3%ADa-software/" target="_blank" rel="noopener noreferrer" aria-label="Valentia on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+        <div class="footer-partner">
+          <span class="partner-dot" aria-hidden="true"></span>
+          <span data-i18n="footer.partner">Hostify Marketplace Partner</span>
+        </div>
       </div>
       <div class="footer-cols">
         <div>
-          <h4>Product</h4>
-          <a href="features.html#operations">Operations</a>
-          <a href="features.html#marketing">Marketing</a>
-          <a href="features.html#finance">Finance</a>
-          <a href="pricing.html">Pricing</a>
+          <h4 data-i18n="footer.product">Product</h4>
+          <a href="features.html#operations" data-i18n="modules.ops.title">Operations</a>
+          <a href="features.html#marketing" data-i18n="modules.marketing.title">Marketing</a>
+          <a href="features.html#finance" data-i18n="modules.finance.title">Finance</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
         </div>
         <div>
-          <h4>Company</h4>
-          <a href="contact.html">Contact</a>
-          <a href="contact.html">Book a demo</a>
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="contact.html" data-i18n="nav.cta">Book a demo</a>
         </div>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Valentia Software. All rights reserved.</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Valentia Software. All rights reserved.</span></span>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
+  <script src="blog.js"></script>
 </body>
 </html>

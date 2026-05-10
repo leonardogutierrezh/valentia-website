@@ -1,17 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Valentia">
+  <!-- Outer diamond frame: teal top edges, navy bottom edges -->
   <g fill="none" stroke-linecap="square" stroke-linejoin="miter" stroke-width="14">
+    <!-- Top-left edge (teal) -->
     <path d="M22 100 L100 22" stroke="#5fb3b3"/>
+    <!-- Top-right edge (teal) -->
     <path d="M100 22 L178 100" stroke="#5fb3b3"/>
+    <!-- Bottom-right edge (navy) -->
     <path d="M178 100 L100 178" stroke="#1e4d7b"/>
+    <!-- Bottom-left edge (navy) -->
     <path d="M100 178 L22 100" stroke="#1e4d7b"/>
   </g>
+
+  <!-- Chimney on upper-left of roof -->
   <rect x="44" y="46" width="10" height="22" fill="#5fb3b3" transform="rotate(-45 49 57)"/>
+
+  <!-- Inner diamond: smaller, same two-tone -->
   <g fill="none" stroke-linecap="square" stroke-linejoin="miter" stroke-width="10">
     <path d="M58 100 L100 58" stroke="#5fb3b3"/>
     <path d="M100 58 L142 100" stroke="#5fb3b3"/>
     <path d="M142 100 L100 142" stroke="#1e4d7b"/>
     <path d="M100 142 L58 100" stroke="#1e4d7b"/>
   </g>
+
+  <!-- Inner arch (teal half-ellipse at top of inner diamond) -->
   <path d="M70 105 Q100 75 130 105 L122 105 Q100 88 78 105 Z" fill="#5fb3b3"/>
+
+  <!-- Orange quarter/sun at base -->
+  <path d="M82 118 Q100 100 118 118 L118 122 Q100 105 82 122 Z" fill="#f08020" opacity="0"/>
   <path d="M82 122 Q100 96 118 122 Z" fill="#f08020"/>
 </svg>

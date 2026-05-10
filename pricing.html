@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing — Valentia Software</title>
-  <meta name="description" content="Valentia pricing — pick the modules you need. Custom quote per portfolio." />
+  <title data-i18n="meta.pricing.title">Pricing — Valentia Software</title>
+  <meta name="description" data-i18n="meta.pricing.desc" content="Valentia pricing — pick the modules you need. Custom quote per portfolio." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,16 +15,21 @@
   <header class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <span class="logo-mark">V</span>
-        <span class="logo-text">Valentia</span>
+        <img src="logo.svg" alt="Valentia" width="36" height="36" />
+        <span class="logo-text">VALENTIA</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="features.html">Modules</a>
-        <a href="pricing.html" class="active">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="features.html" data-i18n="nav.modules">Modules</a>
+        <a href="pricing.html" class="active" data-i18n="nav.pricing">Pricing</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a href="contact.html" class="btn btn-primary nav-cta">Book a demo</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta">Book a demo</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -34,9 +39,12 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Pricing</span>
-        <h1>Priced to your <span class="gradient-text">portfolio.</span></h1>
-        <p class="lead">
+        <span class="eyebrow" data-i18n="nav.pricing">Pricing</span>
+        <h1>
+          <span data-i18n="pricing.h1.a">Priced to your</span>
+          <span class="gradient-text" data-i18n="pricing.h1.b">portfolio.</span>
+        </h1>
+        <p class="lead" data-i18n="pricing.lead">
           Each property manager is different — portfolio size, PMS, fee structure. We quote per setup so you only pay for the modules you need.
         </p>
       </div>
@@ -46,49 +54,51 @@
       <div class="container">
         <div class="grid grid-3">
           <article class="price-card">
-            <h3>Operations</h3>
-            <p class="price-tag">Custom</p>
-            <p class="price-desc">Protocols, owner module, cleaning &amp; maintenance ops.</p>
+            <span class="price-tier-label" data-i18n="modules.ops.title">Operations</span>
+            <h3 class="price-tier-name" data-i18n="pricing.t1.tag">Essential</h3>
+            <p class="price-meta" data-i18n="pricing.custom">Custom quote</p>
+            <p class="price-desc" data-i18n="pricing.t1.desc">Protocols, owner module, cleaning &amp; maintenance ops.</p>
             <ul class="check-list">
-              <li>Unlimited protocols</li>
-              <li>Owner workflows</li>
-              <li>Mobile field app</li>
-              <li>SLA tracking</li>
+              <li data-i18n="pricing.t1.l1">Unlimited protocols</li>
+              <li data-i18n="pricing.t1.l2">Owner workflows</li>
+              <li data-i18n="pricing.t1.l3">Mobile field app</li>
+              <li data-i18n="pricing.t1.l4">SLA tracking</li>
             </ul>
-            <a href="contact.html" class="btn btn-ghost btn-block">Get a quote</a>
+            <a href="contact.html" class="btn btn-ghost btn-block" data-i18n="pricing.quote">Get a quote</a>
           </article>
           <article class="price-card price-card-featured">
-            <div class="price-tag-badge">Most popular</div>
-            <h3>Operations + Finance</h3>
-            <p class="price-tag">Custom</p>
-            <p class="price-desc">Run ops and close the books on one platform.</p>
+            <div class="price-tag-badge" data-i18n="pricing.popular">Most popular</div>
+            <span class="price-tier-label" data-i18n="pricing.t2.title">Operations + Finance</span>
+            <h3 class="price-tier-name" data-i18n="pricing.t2.tag">Pro</h3>
+            <p class="price-meta" data-i18n="pricing.custom">Custom quote</p>
+            <p class="price-desc" data-i18n="pricing.t2.desc">Run ops and close the books on one platform.</p>
             <ul class="check-list">
-              <li>Everything in Operations</li>
-              <li>Owner statements</li>
-              <li>Fee reconciliation</li>
-              <li>QuickBooks / Xero export</li>
+              <li data-i18n="pricing.t2.l1">Everything in Operations</li>
+              <li data-i18n="pricing.t2.l2">Owner statements</li>
+              <li data-i18n="pricing.t2.l3">Fee reconciliation</li>
+              <li data-i18n="pricing.t2.l4">QuickBooks / Xero export</li>
             </ul>
-            <a href="contact.html" class="btn btn-primary btn-block">Get a quote</a>
+            <a href="contact.html" class="btn btn-primary btn-block" data-i18n="pricing.quote">Get a quote</a>
           </article>
           <article class="price-card">
-            <h3>Full suite</h3>
-            <p class="price-tag">Custom</p>
-            <p class="price-desc">Operations + Marketing + Finance, fully integrated.</p>
+            <span class="price-tier-label" data-i18n="pricing.t3.title">Full suite</span>
+            <h3 class="price-tier-name" data-i18n="pricing.t3.tag">Scale</h3>
+            <p class="price-meta" data-i18n="pricing.custom">Custom quote</p>
+            <p class="price-desc" data-i18n="pricing.t3.desc">Operations + Marketing + Finance, fully integrated.</p>
             <ul class="check-list">
-              <li>All three modules</li>
-              <li>LinkedIn automation</li>
-              <li>Owner CRM &amp; nurture</li>
-              <li>Priority support</li>
+              <li data-i18n="pricing.t3.l1">All three modules</li>
+              <li data-i18n="pricing.t3.l2">LinkedIn automation</li>
+              <li data-i18n="pricing.t3.l3">Owner CRM &amp; nurture</li>
+              <li data-i18n="pricing.t3.l4">Priority support</li>
             </ul>
-            <a href="contact.html" class="btn btn-ghost btn-block">Get a quote</a>
+            <a href="contact.html" class="btn btn-ghost btn-block" data-i18n="pricing.quote">Get a quote</a>
           </article>
         </div>
 
         <div class="pricing-note">
           <p>
-            <strong>Why custom pricing?</strong> Property management software at scale depends on portfolio size, PMS integration complexity,
-            and which fee structures you run. Public per-seat pricing tends to misprice both ends. We give you a fixed monthly quote based on
-            your setup — no usage surprises.
+            <strong data-i18n="pricing.note.title">Why custom pricing?</strong>
+            <span data-i18n="pricing.note.body"> Property management software at scale depends on portfolio size, PMS integration complexity, and which fee structures you run. Public per-seat pricing tends to misprice both ends. We give you a fixed monthly quote based on your setup — no usage surprises.</span>
           </p>
         </div>
       </div>
@@ -97,10 +107,10 @@
     <section class="cta-band">
       <div class="container cta-inner">
         <div>
-          <h2>Get your quote in 24 hours.</h2>
-          <p>Tell us your portfolio size and current PMS. We'll send a tailored proposal.</p>
+          <h2 data-i18n="pricing.ctaband.h2">Get your quote in 24 hours.</h2>
+          <p data-i18n="pricing.ctaband.p">Tell us your portfolio size and current PMS. We'll send a tailored proposal.</p>
         </div>
-        <a href="contact.html" class="btn btn-primary btn-lg">Contact us</a>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="pricing.contactus">Contact us</a>
       </div>
     </section>
   </main>
@@ -109,31 +119,42 @@
     <div class="container footer-inner">
       <div>
         <a href="index.html" class="logo">
-          <span class="logo-mark">V</span>
-          <span class="logo-text">Valentia</span>
+          <img src="logo.svg" alt="Valentia" width="36" height="36" />
+          <span class="logo-text">VALENTIA</span>
         </a>
-        <p class="footer-tag">Property management, extended.</p>
+        <p class="footer-tag" data-i18n="footer.tag">Property management, extended.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/valent%C3%ADa-software/" target="_blank" rel="noopener noreferrer" aria-label="Valentia on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+        <div class="footer-partner">
+          <span class="partner-dot" aria-hidden="true"></span>
+          <span data-i18n="footer.partner">Hostify Marketplace Partner</span>
+        </div>
       </div>
       <div class="footer-cols">
         <div>
-          <h4>Product</h4>
-          <a href="features.html#operations">Operations</a>
-          <a href="features.html#marketing">Marketing</a>
-          <a href="features.html#finance">Finance</a>
-          <a href="pricing.html">Pricing</a>
+          <h4 data-i18n="footer.product">Product</h4>
+          <a href="features.html#operations" data-i18n="modules.ops.title">Operations</a>
+          <a href="features.html#marketing" data-i18n="modules.marketing.title">Marketing</a>
+          <a href="features.html#finance" data-i18n="modules.finance.title">Finance</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
         </div>
         <div>
-          <h4>Company</h4>
-          <a href="contact.html">Contact</a>
-          <a href="contact.html">Book a demo</a>
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="contact.html" data-i18n="nav.cta">Book a demo</a>
         </div>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Valentia Software. All rights reserved.</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Valentia Software. All rights reserved.</span></span>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

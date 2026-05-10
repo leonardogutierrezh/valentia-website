@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Valentia Software</title>
-  <meta name="description" content="Talk to the Valentia team. Book a demo or get a tailored quote." />
+  <title data-i18n="meta.contact.title">Contact — Valentia Software</title>
+  <meta name="description" data-i18n="meta.contact.desc" content="Talk to the Valentia team. Book a demo or get a tailored quote." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,16 +15,21 @@
   <header class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <span class="logo-mark">V</span>
-        <span class="logo-text">Valentia</span>
+        <img src="logo.svg" alt="Valentia" width="36" height="36" />
+        <span class="logo-text">VALENTIA</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="features.html">Modules</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="features.html" data-i18n="nav.modules">Modules</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a href="contact.html" class="btn btn-primary nav-cta">Book a demo</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta">Book a demo</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -34,9 +39,12 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Contact</span>
-        <h1>Let's <span class="gradient-text">talk.</span></h1>
-        <p class="lead">
+        <span class="eyebrow" data-i18n="nav.contact">Contact</span>
+        <h1>
+          <span data-i18n="contact.h1.a">Let's</span>
+          <span class="gradient-text" data-i18n="contact.h1.b">talk.</span>
+        </h1>
+        <p class="lead" data-i18n="contact.lead">
           Tell us about your portfolio and current PMS. We'll come back within one business day with a tailored next step.
         </p>
       </div>
@@ -46,61 +54,62 @@
       <div class="container">
         <div class="contact-grid">
           <div class="contact-info">
-            <h3>What to expect</h3>
+            <h3 data-i18n="contact.expect.h3">What to expect</h3>
             <ul class="check-list">
-              <li>Reply within 24 hours, business days</li>
-              <li>30-min discovery call to understand your setup</li>
-              <li>Live demo on a property similar to yours</li>
-              <li>Custom quote within 1–2 days after the demo</li>
+              <li data-i18n="contact.expect.l1">Reply within 24 hours, business days</li>
+              <li data-i18n="contact.expect.l2">30-min discovery call to understand your setup</li>
+              <li data-i18n="contact.expect.l3">Live demo on a property similar to yours</li>
+              <li data-i18n="contact.expect.l4">Custom quote within 1–2 days after the demo</li>
             </ul>
             <div class="contact-direct">
-              <h4>Or reach us directly</h4>
+              <h4 data-i18n="contact.direct.h4">Or reach us directly</h4>
               <p><a href="mailto:hello@valentia.software">hello@valentia.software</a></p>
+              <p><a href="https://www.linkedin.com/company/valent%C3%ADa-software/" target="_blank" rel="noopener noreferrer">LinkedIn →</a></p>
             </div>
           </div>
 
           <form class="contact-form" id="contactForm" novalidate>
             <div class="form-row">
               <label>
-                <span>Name</span>
+                <span data-i18n="form.name">Name</span>
                 <input type="text" name="name" required />
               </label>
               <label>
-                <span>Company</span>
+                <span data-i18n="form.company">Company</span>
                 <input type="text" name="company" required />
               </label>
             </div>
             <div class="form-row">
               <label>
-                <span>Work email</span>
+                <span data-i18n="form.email">Work email</span>
                 <input type="email" name="email" required />
               </label>
               <label>
-                <span>Portfolio size</span>
+                <span data-i18n="form.portfolio">Portfolio size</span>
                 <select name="portfolio">
-                  <option value="">Select…</option>
-                  <option>Under 50 units</option>
-                  <option>50–200 units</option>
-                  <option>200–500 units</option>
-                  <option>500+ units</option>
+                  <option value="" data-i18n="form.select">Select…</option>
+                  <option data-i18n="form.p1">Under 50 units</option>
+                  <option data-i18n="form.p2">50–200 units</option>
+                  <option data-i18n="form.p3">200–500 units</option>
+                  <option data-i18n="form.p4">500+ units</option>
                 </select>
               </label>
             </div>
             <label>
-              <span>Current PMS</span>
-              <input type="text" name="pms" placeholder="Guesty, Hostaway, Streamline, custom…" />
+              <span data-i18n="form.pms">Current PMS</span>
+              <input type="text" name="pms" data-i18n-placeholder="form.pms.ph" placeholder="Guesty, Hostaway, Streamline, custom…" />
             </label>
             <label>
-              <span>What are you trying to solve?</span>
-              <textarea name="message" rows="5" placeholder="Tell us a bit about your situation…"></textarea>
+              <span data-i18n="form.message">What are you trying to solve?</span>
+              <textarea name="message" rows="5" data-i18n-placeholder="form.message.ph" placeholder="Tell us a bit about your situation…"></textarea>
             </label>
             <fieldset class="form-modules">
-              <legend>Modules you're interested in</legend>
-              <label class="checkbox"><input type="checkbox" name="modules" value="Operations" /> Operations</label>
-              <label class="checkbox"><input type="checkbox" name="modules" value="Marketing" /> Marketing</label>
-              <label class="checkbox"><input type="checkbox" name="modules" value="Finance" /> Finance</label>
+              <legend data-i18n="form.modules">Modules you're interested in</legend>
+              <label class="checkbox"><input type="checkbox" name="modules" value="Operations" /> <span data-i18n="modules.ops.title">Operations</span></label>
+              <label class="checkbox"><input type="checkbox" name="modules" value="Marketing" /> <span data-i18n="modules.marketing.title">Marketing</span></label>
+              <label class="checkbox"><input type="checkbox" name="modules" value="Finance" /> <span data-i18n="modules.finance.title">Finance</span></label>
             </fieldset>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Send message</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="form.send">Send message</button>
             <p class="form-note" id="formNote" hidden></p>
           </form>
         </div>
@@ -112,31 +121,42 @@
     <div class="container footer-inner">
       <div>
         <a href="index.html" class="logo">
-          <span class="logo-mark">V</span>
-          <span class="logo-text">Valentia</span>
+          <img src="logo.svg" alt="Valentia" width="36" height="36" />
+          <span class="logo-text">VALENTIA</span>
         </a>
-        <p class="footer-tag">Property management, extended.</p>
+        <p class="footer-tag" data-i18n="footer.tag">Property management, extended.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/valent%C3%ADa-software/" target="_blank" rel="noopener noreferrer" aria-label="Valentia on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+        <div class="footer-partner">
+          <span class="partner-dot" aria-hidden="true"></span>
+          <span data-i18n="footer.partner">Hostify Marketplace Partner</span>
+        </div>
       </div>
       <div class="footer-cols">
         <div>
-          <h4>Product</h4>
-          <a href="features.html#operations">Operations</a>
-          <a href="features.html#marketing">Marketing</a>
-          <a href="features.html#finance">Finance</a>
-          <a href="pricing.html">Pricing</a>
+          <h4 data-i18n="footer.product">Product</h4>
+          <a href="features.html#operations" data-i18n="modules.ops.title">Operations</a>
+          <a href="features.html#marketing" data-i18n="modules.marketing.title">Marketing</a>
+          <a href="features.html#finance" data-i18n="modules.finance.title">Finance</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
         </div>
         <div>
-          <h4>Company</h4>
-          <a href="contact.html">Contact</a>
-          <a href="contact.html">Book a demo</a>
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="contact.html" data-i18n="nav.cta">Book a demo</a>
         </div>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Valentia Software. All rights reserved.</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Valentia Software. All rights reserved.</span></span>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modules — Valentia Software</title>
-  <meta name="description" content="Operations, Marketing and Finance modules from Valentia Software. Built to extend your property management system." />
+  <title data-i18n="meta.modules.title">Modules — Valentia Software</title>
+  <meta name="description" data-i18n="meta.modules.desc" content="Operations, Marketing and Finance modules from Valentia Software. Built to extend your property management system." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,16 +15,21 @@
   <header class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <span class="logo-mark">V</span>
-        <span class="logo-text">Valentia</span>
+        <img src="logo.svg" alt="Valentia" width="36" height="36" />
+        <span class="logo-text">VALENTIA</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="features.html" class="active">Modules</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="features.html" class="active" data-i18n="nav.modules">Modules</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
-      <a href="contact.html" class="btn btn-primary nav-cta">Book a demo</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta">Book a demo</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -34,11 +39,13 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Modules</span>
-        <h1>Three modules. <span class="gradient-text">Built to plug in.</span></h1>
-        <p class="lead">
-          Each Valentia module ships standalone or together. Same data layer, same UI, same auth.
-          Pick what your team needs — extend over time.
+        <span class="eyebrow" data-i18n="nav.modules">Modules</span>
+        <h1>
+          <span data-i18n="features.h1.a">Three modules.</span>
+          <span class="gradient-text" data-i18n="features.h1.b">Built to plug in.</span>
+        </h1>
+        <p class="lead" data-i18n="features.lead">
+          Each Valentia module ships standalone or together. Same data layer, same UI, same auth. Pick what your team needs — extend over time.
         </p>
       </div>
     </section>
@@ -47,30 +54,23 @@
       <div class="container">
         <div class="split">
           <div class="split-text">
-            <span class="eyebrow eyebrow-ops">Operations</span>
-            <h2>Run protocols, not chaos.</h2>
-            <p>
-              Every property management operation runs on routines: turnovers, owner onboarding, maintenance, inspections.
-              Valentia Operations turns those into versioned protocols your team actually follows — with auto-assignment,
-              SLAs, and audit trails.
+            <span class="eyebrow eyebrow-ops" data-i18n="modules.ops.title">Operations</span>
+            <h2 data-i18n="features.ops.h2">Run protocols, not chaos.</h2>
+            <p data-i18n="features.ops.p">
+              Every property management operation runs on routines: turnovers, owner onboarding, maintenance, inspections. Valentia Operations turns those into versioned protocols your team actually follows — with auto-assignment, SLAs, and audit trails.
             </p>
             <ul class="check-list">
-              <li>Protocol library with versioning and rollback</li>
-              <li>Owner module: structured onboarding and recurring touchpoints</li>
-              <li>Cleaning &amp; maintenance ops: scheduling, dispatch, photo proof</li>
-              <li>SLA tracking and automated escalations</li>
-              <li>Mobile-friendly checklists for field staff</li>
+              <li data-i18n="features.ops.l1">Protocol library with versioning and rollback</li>
+              <li data-i18n="features.ops.l2">Owner module: structured onboarding and recurring touchpoints</li>
+              <li data-i18n="features.ops.l3">Cleaning &amp; maintenance ops: scheduling, dispatch, photo proof</li>
+              <li data-i18n="features.ops.l4">SLA tracking and automated escalations</li>
+              <li data-i18n="features.ops.l5">Mobile-friendly checklists for field staff</li>
             </ul>
           </div>
           <div class="split-visual">
-            <div class="feature-mock">
-              <div class="mock-row mock-header">Turnover protocol · v3</div>
-              <div class="mock-row"><span class="mock-dot done"></span>Inspect &amp; report damages</div>
-              <div class="mock-row"><span class="mock-dot done"></span>Cleaning crew dispatched</div>
-              <div class="mock-row"><span class="mock-dot doing"></span>Photo proof uploaded</div>
-              <div class="mock-row"><span class="mock-dot"></span>Owner notification sent</div>
-              <div class="mock-row"><span class="mock-dot"></span>Listing reactivated</div>
-            </div>
+            <figure class="product-shot">
+              <img src="screenshots/img_reservations.png" alt="Valentia reservations list with channels and check-in status" loading="lazy" />
+            </figure>
           </div>
         </div>
       </div>
@@ -80,28 +80,23 @@
       <div class="container">
         <div class="split reverse">
           <div class="split-text">
-            <span class="eyebrow eyebrow-marketing">Marketing</span>
-            <h2>Owner acquisition on autopilot.</h2>
-            <p>
-              Most property managers grow by referrals — slow and unpredictable. Valentia Marketing builds a repeatable
-              pipeline: targeted owner outreach, LinkedIn automation, lead capture, and nurture flows that actually convert.
+            <span class="eyebrow eyebrow-marketing" data-i18n="modules.marketing.title">Marketing</span>
+            <h2 data-i18n="features.marketing.h2">Owner acquisition on autopilot.</h2>
+            <p data-i18n="features.marketing.p">
+              Most property managers grow by referrals — slow and unpredictable. Valentia Marketing builds a repeatable pipeline: targeted owner outreach, LinkedIn automation, lead capture, and nurture flows that actually convert.
             </p>
             <ul class="check-list">
-              <li>LinkedIn outreach automation with personalization</li>
-              <li>Landing pages and lead capture forms (no-code)</li>
-              <li>Email and WhatsApp nurture sequences</li>
-              <li>Owner CRM with deal stages and source tracking</li>
-              <li>Attribution back to closed contracts</li>
+              <li data-i18n="features.marketing.l1">LinkedIn outreach automation with personalization</li>
+              <li data-i18n="features.marketing.l2">Landing pages and lead capture forms (no-code)</li>
+              <li data-i18n="features.marketing.l3">Email and WhatsApp nurture sequences</li>
+              <li data-i18n="features.marketing.l4">Owner CRM with deal stages and source tracking</li>
+              <li data-i18n="features.marketing.l5">Attribution back to closed contracts</li>
             </ul>
           </div>
           <div class="split-visual">
-            <div class="feature-mock">
-              <div class="mock-row mock-header">Owner pipeline · this month</div>
-              <div class="mock-row"><span class="mock-tag tag-new">New</span>Contacted via LinkedIn — 142</div>
-              <div class="mock-row"><span class="mock-tag tag-warm">Warm</span>Replied / scheduled — 28</div>
-              <div class="mock-row"><span class="mock-tag tag-hot">Hot</span>Demo booked — 11</div>
-              <div class="mock-row"><span class="mock-tag tag-won">Won</span>Contracts signed — 4</div>
-            </div>
+            <figure class="product-shot">
+              <img src="screenshots/img_marketing.png" alt="Guest distribution dashboard with nationality map and top guests" loading="lazy" />
+            </figure>
           </div>
         </div>
       </div>
@@ -111,29 +106,23 @@
       <div class="container">
         <div class="split">
           <div class="split-text">
-            <span class="eyebrow eyebrow-finance">Finance</span>
-            <h2>Owner statements that don't require spreadsheets.</h2>
-            <p>
-              Property management finance is messy by default: split fees, reimbursements, owner deductions, multi-currency.
-              Valentia Finance handles the reconciliation so your monthly close is hours, not days.
+            <span class="eyebrow eyebrow-finance" data-i18n="modules.finance.title">Finance</span>
+            <h2 data-i18n="features.finance.h2">Owner statements that don't require spreadsheets.</h2>
+            <p data-i18n="features.finance.p">
+              Property management finance is messy by default: split fees, reimbursements, owner deductions, multi-currency. Valentia Finance handles the reconciliation so your monthly close is hours, not days.
             </p>
             <ul class="check-list">
-              <li>Automated owner statements with branded PDFs</li>
-              <li>Fee structures: management %, fixed, hybrid, per-channel</li>
-              <li>Reservation-level revenue and cost tracking</li>
-              <li>Reimbursements and owner deductions handled cleanly</li>
-              <li>Export to QuickBooks, Xero, or your accountant's format</li>
+              <li data-i18n="features.finance.l1">Automated owner statements with branded PDFs</li>
+              <li data-i18n="features.finance.l2">Fee structures: management %, fixed, hybrid, per-channel</li>
+              <li data-i18n="features.finance.l3">Reservation-level revenue and cost tracking</li>
+              <li data-i18n="features.finance.l4">Reimbursements and owner deductions handled cleanly</li>
+              <li data-i18n="features.finance.l5">Export to QuickBooks, Xero, or your accountant's format</li>
             </ul>
           </div>
           <div class="split-visual">
-            <div class="feature-mock">
-              <div class="mock-row mock-header">Owner statement · April 2026</div>
-              <div class="mock-row"><span>Gross revenue</span><strong>$12,480</strong></div>
-              <div class="mock-row"><span>Management fee (15%)</span><strong>−$1,872</strong></div>
-              <div class="mock-row"><span>Cleaning &amp; ops</span><strong>−$640</strong></div>
-              <div class="mock-row"><span>Reimbursements</span><strong>−$120</strong></div>
-              <div class="mock-row mock-total"><span>Net to owner</span><strong>$9,848</strong></div>
-            </div>
+            <figure class="product-shot">
+              <img src="screenshots/img_finance.png" alt="Finance KPI dashboard: revenue, ADR, occupancy, TRevPAR, RevPAR" loading="lazy" />
+            </figure>
           </div>
         </div>
       </div>
@@ -142,10 +131,10 @@
     <section class="cta-band">
       <div class="container cta-inner">
         <div>
-          <h2>Want to see all three running together?</h2>
-          <p>We'll walk you through a live setup tailored to your portfolio.</p>
+          <h2 data-i18n="features.ctaband.h2">Want to see all three running together?</h2>
+          <p data-i18n="features.ctaband.p">We'll walk you through a live setup tailored to your portfolio.</p>
         </div>
-        <a href="contact.html" class="btn btn-primary btn-lg">Book a demo</a>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="nav.cta">Book a demo</a>
       </div>
     </section>
   </main>
@@ -154,31 +143,42 @@
     <div class="container footer-inner">
       <div>
         <a href="index.html" class="logo">
-          <span class="logo-mark">V</span>
-          <span class="logo-text">Valentia</span>
+          <img src="logo.svg" alt="Valentia" width="36" height="36" />
+          <span class="logo-text">VALENTIA</span>
         </a>
-        <p class="footer-tag">Property management, extended.</p>
+        <p class="footer-tag" data-i18n="footer.tag">Property management, extended.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/valent%C3%ADa-software/" target="_blank" rel="noopener noreferrer" aria-label="Valentia on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+        <div class="footer-partner">
+          <span class="partner-dot" aria-hidden="true"></span>
+          <span data-i18n="footer.partner">Hostify Marketplace Partner</span>
+        </div>
       </div>
       <div class="footer-cols">
         <div>
-          <h4>Product</h4>
-          <a href="features.html#operations">Operations</a>
-          <a href="features.html#marketing">Marketing</a>
-          <a href="features.html#finance">Finance</a>
-          <a href="pricing.html">Pricing</a>
+          <h4 data-i18n="footer.product">Product</h4>
+          <a href="features.html#operations" data-i18n="modules.ops.title">Operations</a>
+          <a href="features.html#marketing" data-i18n="modules.marketing.title">Marketing</a>
+          <a href="features.html#finance" data-i18n="modules.finance.title">Finance</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
         </div>
         <div>
-          <h4>Company</h4>
-          <a href="contact.html">Contact</a>
-          <a href="contact.html">Book a demo</a>
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="contact.html" data-i18n="nav.cta">Book a demo</a>
         </div>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Valentia Software. All rights reserved.</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Valentia Software. All rights reserved.</span></span>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="postTitle">Article — Valentia Software</title>
+  <meta id="postMetaDesc" name="description" content="" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="Valentia" width="36" height="36" />
+        <span class="logo-text">VALENTIA</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="features.html" data-i18n="nav.modules">Modules</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="blog.html" class="active" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta">Book a demo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article class="post">
+      <div class="container container-narrow">
+        <a href="blog.html" class="post-back" data-i18n="post.back">← Back to blog</a>
+        <header class="post-header">
+          <div class="post-meta">
+            <span id="postDate" class="post-date"></span>
+            <span class="post-meta-sep">·</span>
+            <span id="postReading" class="post-reading"></span>
+            <span id="postLangBadge" class="post-lang-badge" hidden></span>
+          </div>
+          <h1 id="postH1" class="post-h1"></h1>
+          <p id="postExcerpt" class="post-excerpt"></p>
+        </header>
+
+        <div id="postBody" class="post-body">
+          <p class="muted" data-i18n="post.loading">Loading article…</p>
+        </div>
+
+        <div id="postError" class="post-error" hidden>
+          <h2 data-i18n="post.error.h2">Article not found</h2>
+          <p data-i18n="post.error.p">We couldn't find this article. It may have been moved or unpublished.</p>
+          <a href="blog.html" class="btn btn-primary" data-i18n="post.error.cta">Back to blog</a>
+        </div>
+
+        <footer class="post-footer">
+          <a href="blog.html" class="btn btn-ghost" data-i18n="post.back">← Back to blog</a>
+          <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Book a demo</a>
+        </footer>
+      </div>
+    </article>
+
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2 data-i18n="home.ctaband.h2">See it on your portfolio.</h2>
+          <p data-i18n="home.ctaband.p">30-minute demo. We'll show you the modules running on a property similar to yours.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="nav.cta">Book a demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="logo">
+          <img src="logo.svg" alt="Valentia" width="36" height="36" />
+          <span class="logo-text">VALENTIA</span>
+        </a>
+        <p class="footer-tag" data-i18n="footer.tag">Property management, extended.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/valent%C3%ADa-software/" target="_blank" rel="noopener noreferrer" aria-label="Valentia on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+        <div class="footer-partner">
+          <span class="partner-dot" aria-hidden="true"></span>
+          <span data-i18n="footer.partner">Hostify Marketplace Partner</span>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4 data-i18n="footer.product">Product</h4>
+          <a href="features.html#operations" data-i18n="modules.ops.title">Operations</a>
+          <a href="features.html#marketing" data-i18n="modules.marketing.title">Marketing</a>
+          <a href="features.html#finance" data-i18n="modules.finance.title">Finance</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="contact.html" data-i18n="nav.cta">Book a demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Valentia Software. All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
