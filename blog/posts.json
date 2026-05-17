@@ -1,8 +1,29 @@
 {
   "posts": [
     {
+      "slug": "caos-invisible-property-manager",
+      "languages": [
+        "es",
+        "en"
+      ],
+      "title": {
+        "es": "El caos invisible: PMS, Excel, WhatsApp y decisiones sueltas",
+        "en": "The invisible chaos: PMS, Excel, WhatsApp, and scattered decisions"
+      },
+      "excerpt": {
+        "es": "El caos invisible aparece cuando un property manager opera con PMS, Excel, WhatsApp y decisiones repartidas. Así se convierte el desorden operativo en control real de negocio.",
+        "en": "Invisible chaos creeps in when a property manager runs the business across PMS, Excel, WhatsApp, and disconnected decisions. Here's how operational mess turns into real business control."
+      },
+      "date": "2026-05-17",
+      "readingMinutes": 9,
+      "tags": []
+    },
+    {
       "slug": "property-manager-necesita-mas-que-pms",
-      "languages": ["es", "en"],
+      "languages": [
+        "es",
+        "en"
+      ],
       "title": {
         "es": "Por qué un property manager necesita algo más que un PMS",
         "en": "Why a property manager needs more than a PMS"
