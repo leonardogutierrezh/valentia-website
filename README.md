@@ -36,29 +36,23 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
-## Deploy to Vercel (CLI)
+## Deploy
+
+The GitHub repo (`leonardogutierrezh/valentia-website`) is connected to the Vercel
+project `valentia-website`:
+
+- Every push to `main` deploys to production automatically.
+- Every push to another branch (or a pull request) gets its own preview URL.
+
+So the normal way to publish is just:
 
 ```bash
-# one-time
-npm i -g vercel
-vercel login
-
-# preview deploy
-vercel
-
-# production
-vercel --prod
+git push origin main
 ```
 
-Vercel detects this as a static site automatically. `vercel.json` is preconfigured with cache headers, security headers, and clean URLs.
-
-## Pushing to GitHub later
-
-```bash
-gh repo create valentia-website --public --source=. --remote=origin --push
-```
-
-Then connect the repo in the Vercel dashboard for auto-deploys on push.
+Manual deploy with the CLI still works if needed (`vercel` for a preview, `vercel --prod`
+for production). Vercel treats this as a static site (no build command). `vercel.json`
+has cache headers, security headers, and clean URLs.
 
 ## Editing copy
 
