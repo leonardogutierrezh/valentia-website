@@ -126,6 +126,22 @@
     return dict[key] || fallback;
   }
 
+  // Topic: platform vs consulting. Consulting hides the PMS/portfolio/modules fields.
+  function syncTopic() {
+    var consulting = (form.querySelector('input[name="topic"]:checked') || {}).value === "consulting";
+    form.querySelectorAll("[data-platform-only]").forEach(function (el) {
+      el.hidden = consulting;
+    });
+  }
+  if (/[?&]topic=consulting\b/.test(window.location.search)) {
+    var c = form.querySelector('input[name="topic"][value="consulting"]');
+    if (c) c.checked = true;
+  }
+  form.querySelectorAll('input[name="topic"]').forEach(function (r) {
+    r.addEventListener("change", syncTopic);
+  });
+  syncTopic();
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -149,25 +165,26 @@
       return;
     }
 
+    var consulting = data.get("topic") === "consulting";
     var pms = (data.get("pms") || "").toString();
     var portfolio = (data.get("portfolio") || "").toString();
     var modules = data.getAll("modules").join(", ");
     var message = (data.get("message") || "").toString();
 
-    var body = [
+    var lines = [
+      "Topic: " + (consulting ? "Consulting project" : "Valentia platform"),
       "Name: " + name,
       "Company: " + company,
       "Email: " + email,
-      "Portfolio: " + portfolio,
-      "PMS: " + pms,
-      "Modules: " + modules,
-      "",
-      message,
-    ].join("\n");
+    ];
+    if (!consulting) {
+      lines.push("Portfolio: " + portfolio, "PMS: " + pms, "Modules: " + modules);
+    }
+    var body = lines.concat(["", message]).join("\n");
 
     var mailto =
       "mailto:hello@valentia.software" +
-      "?subject=" + encodeURIComponent("New inquiry from " + company) +
+      "?subject=" + encodeURIComponent((consulting ? "Consulting inquiry from " : "New inquiry from ") + company) +
       "&body=" + encodeURIComponent(body);
 
     note.hidden = false;
