@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.consulting.title">Software &amp; AI Consulting — Valentia Software</title>
+  <meta name="description" data-i18n="meta.consulting.desc" content="Custom software, AI assistants and integrations for growing businesses." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="Valentia" width="36" height="36" />
+        <span class="logo-text">VALENTIA</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="features.html" data-i18n="nav.modules">Modules</a>
+        <a href="consulting.html" class="active" data-i18n="nav.consulting">Consulting</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="guide.html" data-i18n="nav.guide">Guide</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta">Book a demo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-consulting">
+      <div class="container">
+        <div class="hero-badge" data-i18n="cons.badge">Software &amp; AI consulting</div>
+        <h1>
+          <span data-i18n="cons.h1.a">We build the software and AI</span>
+          <span class="gradient-text" data-i18n="cons.h1.b">your business is missing.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="cons.sub">Custom apps, AI assistants and integrations — designed, built and kept running by a team that ships and operates its own SaaS.</p>
+        <div class="hero-cta">
+          <a href="contact.html?topic=consulting" class="btn btn-primary btn-lg" data-i18n="cons.cta.primary">Book a 30-min call</a>
+          <a href="#services" class="btn btn-ghost btn-lg" data-i18n="cons.cta.secondary">See what we build →</a>
+        </div>
+        <div class="problems">
+          <span class="problems-label" data-i18n="cons.prob.label">Sounds familiar?</span>
+          <div class="problem" data-i18n="cons.prob.p1">“Our operation runs on spreadsheets.”</div>
+          <div class="problem" data-i18n="cons.prob.p2">“Our tools don't talk to each other.”</div>
+          <div class="problem" data-i18n="cons.prob.p3">“We want to use AI but don't know where to start.”</div>
+          <div class="problem" data-i18n="cons.prob.p4">“Our system can't grow with us.”</div>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="cons.svc.eyebrow">Services</span>
+          <h2 data-i18n="cons.svc.h2">What we build</h2>
+          <p data-i18n="cons.svc.p">From the first idea to software your team uses every day — and we stay to keep it running.</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card">
+            <div class="card-icon ops"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+            <h3 data-i18n="cons.svc.s1.title">Custom business software</h3>
+            <p data-i18n="cons.svc.s1.desc">Internal tools, client portals, back-offices and mobile apps. Built around how you work, not the other way around.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon finance"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 17l.8 2.2L22 20l-2.2.8L19 23l-.8-2.2L16 20l2.2-.8L19 17z"/></svg></div>
+            <h3 data-i18n="cons.svc.s2.title">AI assistants &amp; automation</h3>
+            <p data-i18n="cons.svc.s2.desc">AI that reads, writes and answers using your own data: reports, customer replies, document processing, and assistants connected to your systems.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon marketing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.5.5l3-3a5 5 0 00-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 00-7.5-.5l-3 3a5 5 0 007 7l1.7-1.7"/></svg></div>
+            <h3 data-i18n="cons.svc.s3.title">Integrations &amp; data</h3>
+            <p data-i18n="cons.svc.s3.desc">Connect your PMS, CRM, shop, ERP and spreadsheets. Dashboards and reports that update themselves.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon ops"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+            <h3 data-i18n="cons.svc.s4.title">Modernization</h3>
+            <p data-i18n="cons.svc.s4.desc">Move off expensive or outdated platforms — old frameworks or no-code tools you've outgrown — without losing what works.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="cons.how.eyebrow">How we work</span>
+          <h2 data-i18n="cons.how.h2">Small steps, working software</h2>
+        </div>
+        <div class="grid grid-4 steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h3 data-i18n="cons.how.s1.title">Discovery call</h3>
+            <p data-i18n="cons.how.s1.desc">Free, 30 minutes. We learn the problem and how your business runs.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h3 data-i18n="cons.how.s2.title">Diagnostic &amp; proposal</h3>
+            <p data-i18n="cons.how.s2.desc">1–2 weeks. A map of your process, what to build first, and a fixed quote.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h3 data-i18n="cons.how.s3.title">Build in short cycles</h3>
+            <p data-i18n="cons.how.s3.desc">Working software every 1–2 weeks. You review and steer as we go.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <h3 data-i18n="cons.how.s4.title">Run &amp; improve</h3>
+            <p data-i18n="cons.how.s4.desc">Hosting, support and new features on a simple monthly plan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="cons.case.eyebrow">Selected work</span>
+          <h2 data-i18n="cons.case.h2">Built and proven in our own operation</h2>
+        </div>
+        <article class="case-card">
+          <div class="case-text">
+            <span class="case-client" data-i18n="cons.case.client">Vacation rental management · Valencia</span>
+            <h3 data-i18n="cons.case.title">VLC Host</h3>
+            <div class="case-block">
+              <h4 data-i18n="cons.case.problem.h">The problem</h4>
+              <p data-i18n="cons.case.problem">VLC Host's operation was spread across its PMS, spreadsheets and chat messages. Owner reports and month-end closing took days of manual work.</p>
+            </div>
+            <div class="case-block">
+              <h4 data-i18n="cons.case.built.h">What we built</h4>
+              <ul class="check-list">
+                <li data-i18n="cons.case.built.l1">A management app for the whole team</li>
+                <li data-i18n="cons.case.built.l2">Live sync with the PMS — 50+ fields per reservation</li>
+                <li data-i18n="cons.case.built.l3">Smart-lock automation across 9+ lock types</li>
+                <li data-i18n="cons.case.built.l4">Owner reports that write themselves</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-stats">
+              <div><strong>300+</strong><span data-i18n="cons.case.stat1">properties managed</span></div>
+              <div><strong>200+</strong><span data-i18n="cons.case.stat2">hours saved every month</span></div>
+              <div><strong>15,000+</strong><span data-i18n="cons.case.stat3">reservations a year</span></div>
+              <div><strong>90%</strong><span data-i18n="cons.case.stat4">keyless check-ins</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt section-tight">
+      <div class="container tech">
+        <span class="eyebrow" data-i18n="cons.tech.eyebrow">Tech we use</span>
+        <div class="tech-list"><span>Python</span><span>Django</span><span>JavaScript</span><span>React</span><span>Astro</span><span>Swift / iOS</span><span>PostgreSQL</span><span>MySQL</span><span>AWS</span><span>Vercel</span><span>Claude</span><span>OpenAI</span><span>MCP</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="cons.models.eyebrow">Ways to work together</span>
+          <h2 data-i18n="cons.models.h2">Pick the model that fits</h2>
+          <p data-i18n="cons.models.p">No public price list — every business is different. You get a fixed quote after the diagnostic.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card model-card">
+            <span class="price-tier-label" data-i18n="cons.models.m1.label">Project</span>
+            <h3 data-i18n="cons.models.m1.title">Fixed scope, fixed price</h3>
+            <p data-i18n="cons.models.m1.desc">A clear goal, a clear quote. Best for a new app, a migration or an integration.</p>
+          </article>
+          <article class="card model-card model-card-featured">
+            <span class="price-tier-label" data-i18n="cons.models.m2.label">AI pilot</span>
+            <h3 data-i18n="cons.models.m2.title">2–4 weeks on one real process</h3>
+            <p data-i18n="cons.models.m2.desc">A fixed-price AI proof of concept on your own data, so you see the value before you invest more.</p>
+          </article>
+          <article class="card model-card">
+            <span class="price-tier-label" data-i18n="cons.models.m3.label">Monthly team</span>
+            <h3 data-i18n="cons.models.m3.title">Ongoing building and support</h3>
+            <p data-i18n="cons.models.m3.desc">A set number of days each month to keep improving your software, with support included.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="eyebrow">FAQ</span>
+          <h2 data-i18n="cons.faq.h2">Common questions</h2>
+        </div>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary data-i18n="cons.faq.q1">Do you only work with vacation rental companies?</summary>
+            <p data-i18n="cons.faq.a1">No. Valentia grew out of vacation rentals, but our consulting is for any business that needs custom software, AI or integrations.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="cons.faq.q2">Who owns the code?</summary>
+            <p data-i18n="cons.faq.a2">You do. The code and the data are yours from day one.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="cons.faq.q3">Can you work with our existing team or system?</summary>
+            <p data-i18n="cons.faq.a3">Yes. We often extend what you already have instead of replacing it, and we can work alongside your own developers.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="cons.faq.q4">How much does a project cost?</summary>
+            <p data-i18n="cons.faq.a4">It depends on the scope. After the diagnostic you get a fixed quote, so there are no surprises.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="cons.faq.q5">Is our data safe with AI?</summary>
+            <p data-i18n="cons.faq.a5">We use business AI services that don't train on your data, and we give the AI access only to what it needs.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="cons.faq.q6">Where do you work?</summary>
+            <p data-i18n="cons.faq.a6">Remotely, in English and Spanish, with clients in Spain and Latin America.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2 data-i18n="cons.ctaband.h2">Tell us what's slowing your business down.</h2>
+          <p data-i18n="cons.ctaband.p">We'll come back within one business day with a first idea.</p>
+        </div>
+        <a href="contact.html?topic=consulting" class="btn btn-primary btn-lg" data-i18n="cons.cta.primary">Book a 30-min call</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="logo">
+          <img src="logo.svg" alt="Valentia" width="36" height="36" />
+          <span class="logo-text">VALENTIA</span>
+        </a>
+        <p class="footer-tag" data-i18n="footer.tag">Property management, extended.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/valent%C3%ADa-software/" target="_blank" rel="noopener noreferrer" aria-label="Valentia on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+        <div class="footer-partner">
+          <span class="partner-dot" aria-hidden="true"></span>
+          <span data-i18n="footer.partner">Hostify Marketplace Partner</span>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4 data-i18n="footer.product">Product</h4>
+          <a href="features.html#operations" data-i18n="modules.ops.title">Operations</a>
+          <a href="features.html#marketing" data-i18n="modules.marketing.title">Marketing</a>
+          <a href="features.html#finance" data-i18n="modules.finance.title">Finance</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        </div>
+        <div>
+          <h4 data-i18n="footer.company">Company</h4>
+          <a href="consulting.html" data-i18n="nav.consulting">Consulting</a>
+          <a href="guide.html" data-i18n="nav.guide">Guide</a>
+          <a href="blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="contact.html" data-i18n="nav.cta">Book a demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Valentia Software. All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js?v=4"></script>
+  <script src="script.js?v=4"></script>
+  </body>
+</html>
