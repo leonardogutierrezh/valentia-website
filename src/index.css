@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 62% 14%;
+
+    --vlc-navy: 213 62% 31%;
+    --vlc-teal: 186 46% 47%;
+    --vlc-light-teal: 175 47% 59%;
+    --vlc-orange: 29 100% 55%;
+    --vlc-gradient: linear-gradient(135deg, hsl(213 62% 31%) 0%, hsl(186 46% 47%) 100%);
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 62% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 62% 14%;
+
+    --primary: 186 46% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 175 47% 59%;
+    --secondary-foreground: 213 62% 14%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 213 20% 46%;
+
+    --accent: 29 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 186 46% 47%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: var(--vlc-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-vlc {
+    background: var(--vlc-gradient);
+  }
+}
