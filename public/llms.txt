@@ -1,0 +1,97 @@
+# Valentia Software
+
+> Valentia Software is a software and AI company from Valencia, Spain. It builds custom dashboards, CRMs, ERPs, internal tools and AI assistants tailored to each business, and operates the Valentia Property Operations Platform — an intelligence layer for short-term and vacation rental (tourist rental) companies built on top of their existing PMS. The team specialises in both software development and the tourist rental industry. Work is remote, in English and Spanish, serving clients in Spain and Latin America.
+
+## Custom software & AI consulting
+
+For any business that needs its own system built around how it works — not only rental companies.
+
+- **Custom dashboards and reporting** — KPIs, revenue, operations, reports that update themselves.
+- **Custom CRM and ERP** — client portals, back-offices, owner management, invoicing and internal tools.
+- **AI assistants & automation** — AI that reads, writes and answers using your own data: reports, customer replies, document processing, assistants connected to your systems.
+- **Integrations & data** — connect PMS, CRM, shop, ERP and spreadsheets into one source of truth.
+- **Modernisation** — move off outdated platforms or no-code tools you have outgrown without losing what works.
+
+### Engagement models
+- Fixed-scope, fixed-price project — a clear goal, a clear quote. Best for a new app, migration or integration.
+- AI pilot (2–4 weeks) — fixed-price proof of concept on your own data, so you see the value before investing more.
+- Monthly team — a set number of days each month to keep improving your software, with support included.
+
+### Process
+1. Free 30-minute discovery call — we learn the problem and how the business runs.
+2. Diagnostic & proposal (1–2 weeks) — a map of the process, what to build first, and a fixed quote.
+3. Build in short cycles — working software delivered every 1–2 weeks; the client reviews and steers as work progresses.
+4. Run & improve — hosting, support and new features on a simple monthly plan.
+
+The client owns the code and the data from day one.
+
+### Tech stack
+Python, Django, JavaScript, React, Astro, Swift / iOS, PostgreSQL, MySQL, AWS, Vercel, Claude, OpenAI, MCP.
+
+### Frequently asked questions
+- **Do you only work with vacation rental companies?** No. Valentia grew out of vacation rentals, but consulting is for any business that needs custom software, AI or integrations.
+- **Who owns the code?** The client does — code and data are theirs from day one.
+- **Can you work with our existing team or system?** Yes. We often extend what already exists instead of replacing it, and can work alongside the client's own developers.
+- **How much does a project cost?** It depends on scope. After the diagnostic the client receives a fixed quote with no surprises.
+- **Is our data safe with AI?** Business AI services are used that do not train on client data, and the AI is given access only to what it needs.
+- **Where do you work?** Remotely, in English and Spanish, with clients in Spain and Latin America.
+
+---
+
+## Specialists in the tourist / vacation rental industry
+
+**Case study — VLC Host (Valencia)**
+- 300+ properties managed
+- 200+ hours saved every month
+- 15,000+ reservations a year
+- 90% keyless check-ins
+- Built: team management app, live PMS sync (50+ fields per reservation), smart-lock automation across 9+ lock types, automatic owner reports.
+
+---
+
+## Valentia Property Operations Platform
+
+An intelligence layer on top of a rental company's existing PMS. Hostify Marketplace Partner (one-click integration). Bilingual interface (English / Spanish). Multi-company, multi-property, role-based access.
+
+### Modules
+- **Operations** — reservations, listings, smart locks, per-property protocols, cleaning and maintenance workflows, mobile field app.
+- **Marketing** — guest lifetime value, nationality maps, demographic breakdowns, exports.
+- **Finance** — AI revenue analysis: ADR, occupancy, pickup forecasting, channel performance, answered in plain language (powered by OpenAI).
+
+### Pricing
+Valentia Software uses custom pricing based on portfolio size, PMS integration complexity, and fee structure. There are three tiers:
+- **Essential (Operations)** — protocols, owner module, cleaning & maintenance ops.
+- **Pro (Operations + Finance)** — adds owner statements, fee reconciliation, QuickBooks / Xero export.
+- **Scale (Full suite)** — all three modules plus LinkedIn automation, owner CRM & nurture, priority support.
+All tiers are quoted per setup. Contact hello@valentia.software for a quote.
+
+---
+
+## Integration guide — connecting Hostify to Valentia
+
+Three-step process:
+1. Find your API Key in Hostify under Settings (at the bottom of the page).
+2. Send the API Key to the Valentia team via email, WhatsApp, or support ticket.
+3. The team configures the connection in under 24 hours; log in at app.valentiasoftware.com.
+
+---
+
+## Blog
+
+Recent articles written by the Valentia team:
+
+- **The invisible chaos: PMS, Excel, WhatsApp, and scattered decisions** (May 2026, 9 min read, EN/ES) — How operational fragmentation across PMS, spreadsheets and messaging apps hurts property managers, and how centralising data turns that chaos into business control.
+- **What a property manager needs beyond a PMS** (May 2026, 8 min read, EN/ES) — The gap between what a PMS does and what a property management business actually needs to operate, analyse and grow.
+
+---
+
+## Contact
+
+- Website: https://www.valentiasoftware.com/
+- Platform login: https://app.valentiasoftware.com/
+- Email: hello@valentia.software
+- Support: support@valentiasoftware.com
+- LinkedIn: https://www.linkedin.com/company/valent%C3%ADa-software/
+- Pricing page: https://www.valentiasoftware.com/pricing
+- Integration guide: https://www.valentiasoftware.com/guide
+- Blog: https://www.valentiasoftware.com/blog
