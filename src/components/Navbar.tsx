@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import valentiaLogo from "@/assets/valentia-logo.png";
 import { useI18n } from "@/lib/i18n";
 
@@ -32,20 +33,20 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={valentiaLogo} alt="Valentia" className="h-8 w-auto" />
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
-            <a
+            <Link
               key={l.href}
-              href={l.href}
+              to={l.href}
               className="font-body text-sm font-medium text-foreground/70 transition-colors duration-200 hover:text-vlc-teal"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -73,12 +74,12 @@ export function Navbar() {
           >
             {t("nav.login")}
           </a>
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"
             className="rounded-lg bg-gradient-vlc px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:shadow-lg hover:shadow-vlc-teal/20 active:scale-[0.97]"
           >
             {t("nav.cta")}
-          </a>
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -98,14 +99,14 @@ export function Navbar() {
         <div className="border-t border-border bg-background/95 backdrop-blur-md md:hidden">
           <div className="container mx-auto flex flex-col gap-4 px-6 py-6">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to={l.href}
                 onClick={() => setMobileOpen(false)}
                 className="text-sm font-medium text-foreground/70"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
             <div className="flex gap-3 pt-2">
               <div className="flex overflow-hidden rounded-lg border border-border text-xs font-semibold">
@@ -124,9 +125,9 @@ export function Navbar() {
               <a href="https://app.valentiasoftware.com/" className="rounded-lg border border-vlc-navy px-4 py-2 text-sm font-medium text-vlc-navy">
                 {t("nav.login")}
               </a>
-              <a href="#contact" onClick={() => setMobileOpen(false)} className="rounded-lg bg-gradient-vlc px-4 py-2 text-sm font-medium text-white">
+              <Link to="/#contact" onClick={() => setMobileOpen(false)} className="rounded-lg bg-gradient-vlc px-4 py-2 text-sm font-medium text-white">
                 {t("nav.cta")}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
