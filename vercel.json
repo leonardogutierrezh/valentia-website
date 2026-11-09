@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/blog/:slug", "destination": "/post?slug=:slug" }
+    { "source": "/((?!api|_next|.*\\..*).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
