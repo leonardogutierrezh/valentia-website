@@ -151,8 +151,7 @@ export default function Guide() {
               {t("guide.eyebrow")}
             </span>
             <h1 className="text-4xl font-bold tracking-tight text-vlc-navy sm:text-5xl md:text-6xl">
-              {t("guide.h1a")}{" "}
-              <span className="bg-gradient-vlc bg-clip-text text-transparent">{t("guide.h1b")}</span>
+              {t("guide.h1a")} {t("guide.h1b")}
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
               {t("guide.lead")}

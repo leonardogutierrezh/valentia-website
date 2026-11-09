@@ -46,8 +46,7 @@ export default function Pricing() {
               {t("pricing.eyebrow")}
             </span>
             <h1 className="text-4xl font-bold tracking-tight text-vlc-navy sm:text-5xl md:text-6xl">
-              {t("pricing.h1a")}{" "}
-              <span className="bg-gradient-vlc bg-clip-text text-transparent">{t("pricing.h1b")}</span>
+              {t("pricing.h1a")} {t("pricing.h1b")}
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
               {t("pricing.lead")}
