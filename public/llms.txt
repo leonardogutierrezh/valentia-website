@@ -92,6 +92,7 @@ Recent articles written by the Valentia team:
 - Email: hello@valentia.software
 - Support: support@valentiasoftware.com
 - LinkedIn: https://www.linkedin.com/company/valent%C3%ADa-software/
+- Consulting page: https://www.valentiasoftware.com/consulting
 - Pricing page: https://www.valentiasoftware.com/pricing
 - Integration guide: https://www.valentiasoftware.com/guide
 - Blog: https://www.valentiasoftware.com/blog

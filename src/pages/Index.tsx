@@ -6,7 +6,6 @@ import { Gallery } from "@/components/Gallery";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { WhyValentia } from "@/components/WhyValentia";
-import { Consulting } from "@/components/Consulting";
 
 const Index = () => {
   return (
@@ -17,7 +16,6 @@ const Index = () => {
       <Stats />
       <Gallery />
       <WhyValentia />
-      <Consulting />
       <ContactForm />
       <Footer />
     </div>
