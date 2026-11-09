@@ -134,14 +134,12 @@ export default function Blog() {
                       <p className="mt-2 flex-1 text-sm text-muted-foreground line-clamp-3">
                         {post.excerpt[lang]}
                       </p>
-                      <a
-                        href={`/blog/posts/${post.slug}.${lang}.md`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        to={`/blog/${post.slug}`}
                         className="mt-4 text-sm font-medium text-vlc-teal hover:underline"
                       >
                         {t("blog.read")}
-                      </a>
+                      </Link>
                     </article>
                   );
                 })}
