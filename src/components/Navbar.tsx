@@ -76,7 +76,7 @@ export function Navbar() {
           </a>
           <Link
             to="/#contact"
-            className="whitespace-nowrap rounded-lg bg-gradient-vlc px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:shadow-lg hover:shadow-vlc-teal/20 active:scale-[0.97]"
+            className="whitespace-nowrap rounded-lg bg-vlc-teal hover:bg-vlc-teal/90 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:shadow-lg hover:shadow-vlc-teal/20 active:scale-[0.97]"
           >
             {t("nav.cta")}
           </Link>
@@ -125,7 +125,7 @@ export function Navbar() {
               <a href="https://app.valentiasoftware.com/" className="rounded-lg border border-vlc-navy px-4 py-2 text-sm font-medium text-vlc-navy">
                 {t("nav.login")}
               </a>
-              <Link to="/#contact" onClick={() => setMobileOpen(false)} className="rounded-lg bg-gradient-vlc px-4 py-2 text-sm font-medium text-white">
+              <Link to="/#contact" onClick={() => setMobileOpen(false)} className="rounded-lg bg-vlc-teal hover:bg-vlc-teal/90 px-4 py-2 text-sm font-medium text-white">
                 {t("nav.cta")}
               </Link>
             </div>

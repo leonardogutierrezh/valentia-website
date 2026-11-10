@@ -83,7 +83,7 @@ export function Footer() {
           <div>
             <h4 className="mb-3 text-xs font-semibold uppercase tracking-widest text-white/30">{t("footer.contact")}</h4>
             <div className="space-y-2">
-              <NavLink href="mailto:hello@valentia.software">hello@valentia.software</NavLink>
+              <NavLink href="mailto:hello@valentiasoftware.com">hello@valentiasoftware.com</NavLink>
             </div>
           </div>
         </div>
