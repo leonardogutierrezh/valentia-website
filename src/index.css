@@ -87,3 +87,7 @@
     background: var(--vlc-gradient);
   }
 }
+
+section[id] {
+  scroll-margin-top: 5rem;
+}

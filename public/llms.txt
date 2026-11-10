@@ -90,7 +90,7 @@ Recent articles written by the Valentia team:
 - Website: https://www.valentiasoftware.com/
 - Platform login: https://app.valentiasoftware.com/
 - Email: hello@valentia.software
-- Support: support@valentiasoftware.com
+- Support: hello@valentia.software
 - LinkedIn: https://www.linkedin.com/company/valent%C3%ADa-software/
 - Consulting page: https://www.valentiasoftware.com/consulting
 - Pricing page: https://www.valentiasoftware.com/pricing

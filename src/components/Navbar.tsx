@@ -38,12 +38,12 @@ export function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 lg:flex xl:gap-8">
           {links.map((l) => (
             <Link
               key={l.href}
               to={l.href}
-              className="font-body text-sm font-medium text-foreground/70 transition-colors duration-200 hover:text-vlc-teal"
+              className="whitespace-nowrap font-body text-sm font-medium text-foreground/70 transition-colors duration-200 hover:text-vlc-teal"
             >
               {l.label}
             </Link>
@@ -51,7 +51,7 @@ export function Navbar() {
         </div>
 
         {/* Desktop CTAs */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           {/* Language toggle */}
           <div className="flex overflow-hidden rounded-lg border border-border text-xs font-semibold">
             {(["en", "es"] as const).map((l) => (
@@ -70,13 +70,13 @@ export function Navbar() {
           </div>
           <a
             href="https://app.valentiasoftware.com/"
-            className="rounded-lg border border-vlc-navy px-4 py-2 text-sm font-medium text-vlc-navy transition-all duration-200 hover:bg-vlc-navy hover:text-white active:scale-[0.97]"
+            className="whitespace-nowrap rounded-lg border border-vlc-navy px-4 py-2 text-sm font-medium text-vlc-navy transition-all duration-200 hover:bg-vlc-navy hover:text-white active:scale-[0.97]"
           >
             {t("nav.login")}
           </a>
           <Link
             to="/#contact"
-            className="rounded-lg bg-gradient-vlc px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:shadow-lg hover:shadow-vlc-teal/20 active:scale-[0.97]"
+            className="whitespace-nowrap rounded-lg bg-gradient-vlc px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:shadow-lg hover:shadow-vlc-teal/20 active:scale-[0.97]"
           >
             {t("nav.cta")}
           </Link>
@@ -84,7 +84,7 @@ export function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="flex flex-col gap-1.5 md:hidden"
+          className="flex flex-col gap-1.5 lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -96,7 +96,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-border bg-background/95 backdrop-blur-md md:hidden">
+        <div className="border-t border-border bg-background/95 backdrop-blur-md lg:hidden">
           <div className="container mx-auto flex flex-col gap-4 px-6 py-6">
             {links.map((l) => (
               <Link

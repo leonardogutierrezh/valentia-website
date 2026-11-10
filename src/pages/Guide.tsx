@@ -34,7 +34,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Pantalla de inicio de sesión de Valentia Software", wide: false },
       },
     ],
-    help: { text: "¿Necesitas ayuda? Escríbenos a", email: "soporte@valentiasoftware.com" },
+    help: { text: "¿Necesitas ayuda? Escríbenos a", email: "hello@valentia.software" },
     alt: false,
   },
   {
@@ -67,7 +67,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Écran de connexion de Valentia Software", wide: false },
       },
     ],
-    help: { text: "Besoin d'aide ? Contactez-nous à", email: "support@valentiasoftware.com" },
+    help: { text: "Besoin d'aide ? Contactez-nous à", email: "hello@valentia.software" },
     alt: true,
   },
   {
@@ -99,7 +99,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Valentia Software login screen", wide: false },
       },
     ],
-    help: { text: "Need help? Contact us at", email: "support@valentiasoftware.com" },
+    help: { text: "Need help? Contact us at", email: "hello@valentia.software" },
     alt: false,
   },
   {
@@ -132,7 +132,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Anmeldebildschirm von Valentia Software", wide: false },
       },
     ],
-    help: { text: "Benötigen Sie Hilfe? Kontaktieren Sie uns unter", email: "support@valentiasoftware.com" },
+    help: { text: "Benötigen Sie Hilfe? Kontaktieren Sie uns unter", email: "hello@valentia.software" },
     alt: true,
   },
 ];
