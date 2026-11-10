@@ -1,6 +1,18 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { Check } from "lucide-react";
+import { Check, Database, Layers, Users, ClipboardCheck, Megaphone, LineChart, ArrowUpDown } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+
+function Connector({ label }: { label?: string }) {
+  return (
+    <div className="relative flex h-12 items-center justify-center">
+      <div className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-vlc-teal/40" />
+      <span className="relative flex items-center gap-1.5 rounded-full border border-vlc-teal/30 bg-background px-3 py-1 text-xs font-medium text-vlc-teal">
+        <ArrowUpDown className="h-3.5 w-3.5" />
+        {label}
+      </span>
+    </div>
+  );
+}
 
 export function WhyValentia() {
   const { ref, isVisible } = useScrollReveal();
@@ -33,19 +45,45 @@ export function WhyValentia() {
           </ul>
         </div>
 
-        <div className={`mx-auto w-full max-w-sm space-y-3 text-center ${reveal(200)}`}>
-          <div className="rounded-xl border border-border bg-card px-6 py-4 font-display font-semibold text-vlc-navy">{t("why.stack.pms")}</div>
-          <div className="text-vlc-teal">↕</div>
-          <div className="rounded-2xl bg-gradient-vlc p-5 text-white shadow-lg shadow-vlc-teal/20">
-            <p className="font-display text-lg font-bold">{t("why.stack.layer")}</p>
-            <div className="mt-3 grid grid-cols-3 gap-2 text-xs font-medium">
-              {[t("why.stack.ops"), t("why.stack.marketing"), t("why.stack.finance")].map((m) => (
-                <span key={m} className="rounded-lg bg-white/15 py-2">{m}</span>
+        <div className={`mx-auto w-full max-w-sm ${reveal(200)}`}>
+          <div className="flex items-center gap-3 rounded-xl border border-border bg-card px-5 py-4">
+            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-vlc-navy">
+              <Database className="h-5 w-5" strokeWidth={1.8} />
+            </span>
+            <span className="font-display font-semibold text-vlc-navy">{t("why.stack.pms")}</span>
+          </div>
+
+          <Connector label={t("why.stack.sync")} />
+
+          <div className="rounded-2xl bg-vlc-navy p-5 text-white shadow-lg shadow-vlc-navy/20">
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-vlc-teal">
+                <Layers className="h-5 w-5" strokeWidth={1.8} />
+              </span>
+              <p className="font-display text-lg font-bold">{t("why.stack.layer")}</p>
+            </div>
+            <div className="mt-4 grid grid-cols-3 gap-2 text-xs font-medium">
+              {[
+                { icon: ClipboardCheck, label: t("why.stack.ops") },
+                { icon: Megaphone, label: t("why.stack.marketing") },
+                { icon: LineChart, label: t("why.stack.finance") },
+              ].map((m) => (
+                <span key={m.label} className="flex flex-col items-center gap-1.5 rounded-lg bg-white/10 py-3">
+                  <m.icon className="h-4 w-4 text-vlc-light-teal" strokeWidth={2} />
+                  {m.label}
+                </span>
               ))}
             </div>
           </div>
-          <div className="text-vlc-teal">↕</div>
-          <div className="rounded-xl border border-border bg-card px-6 py-4 font-display font-semibold text-vlc-navy">{t("why.stack.team")}</div>
+
+          <Connector />
+
+          <div className="flex items-center gap-3 rounded-xl border border-border bg-card px-5 py-4">
+            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-vlc-navy">
+              <Users className="h-5 w-5" strokeWidth={1.8} />
+            </span>
+            <span className="font-display font-semibold text-vlc-navy">{t("why.stack.team")}</span>
+          </div>
         </div>
       </div>
     </section>

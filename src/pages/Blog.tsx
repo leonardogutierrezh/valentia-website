@@ -157,7 +157,7 @@ export default function Blog() {
             </div>
             <Link
               to="/#contact"
-              className="shrink-0 rounded-xl bg-gradient-vlc px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all duration-200 hover:shadow-xl active:scale-[0.97]"
+              className="shrink-0 rounded-xl bg-vlc-teal hover:bg-vlc-teal/90 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all duration-200 hover:shadow-xl active:scale-[0.97]"
             >
               {t("blog.band.cta")}
             </Link>

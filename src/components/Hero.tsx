@@ -1,76 +1,89 @@
+import { Link } from "react-router-dom";
+import { LayoutDashboard, Wrench, ArrowRight, Plug } from "lucide-react";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import heroBg from "@/assets/hero-city.jpg";
 import imgDashboard from "@/assets/img_dashboard.png";
 import { useI18n } from "@/lib/i18n";
 
 export function Hero() {
   const { ref, isVisible } = useScrollReveal(0.1);
   const { t } = useI18n();
+  const fade = isVisible ? "opacity-0 animate-fade-up" : "opacity-0";
+  const delay = (ms: number) => ({ animationDelay: `${ms}ms` });
+
+  const options = [
+    {
+      icon: LayoutDashboard,
+      tag: t("hero.opt1.tag"),
+      title: t("hero.opt1.title"),
+      desc: t("hero.opt1.desc"),
+      cta: t("hero.opt1.cta"),
+      to: "/#contact",
+      primary: true,
+    },
+    {
+      icon: Wrench,
+      tag: t("hero.opt2.tag"),
+      title: t("hero.opt2.title"),
+      desc: t("hero.opt2.desc"),
+      cta: t("hero.opt2.cta"),
+      to: "/consulting",
+      primary: false,
+    },
+  ];
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* Background image with dark overlay */}
-      <div className="absolute inset-0 -z-10">
-        <img src={heroBg} alt="" className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-vlc-navy/80 via-vlc-navy/70 to-vlc-navy/90" />
-      </div>
-
+    <section className="relative overflow-hidden bg-vlc-navy">
       <div ref={ref} className="container mx-auto px-6 pt-32 pb-16 md:pt-40 md:pb-24">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className={`mb-4 text-sm font-semibold uppercase tracking-widest text-vlc-light-teal opacity-0 ${isVisible ? "animate-fade-up" : ""}`}>
+        <div className="mx-auto max-w-4xl text-center">
+          <p className={`mb-4 text-sm font-semibold uppercase tracking-widest text-vlc-light-teal ${fade}`} style={delay(0)}>
             {t("hero.badge")}
           </p>
           <h1
-            className={`font-display text-3xl font-bold leading-[1.05] tracking-[-0.03em] text-white sm:text-6xl md:text-4xl lg:text-5xl opacity-0 ${
-              isVisible ? "animate-fade-up [animation-delay:60ms]" : ""
-            }`}
+            className={`font-display text-4xl font-bold leading-[1.08] tracking-[-0.03em] text-white sm:text-5xl lg:text-6xl ${fade}`} style={delay(60)}
           >
-            {t("hero.h1a")}
-            <br />
-            <span className="bg-gradient-to-r from-vlc-light-teal to-vlc-teal bg-clip-text text-transparent">
-              {t("hero.h1b")}
-            </span>
+            {t("hero.h1a")} <span className="text-vlc-light-teal">{t("hero.h1b")}</span>
           </h1>
-
-          <p
-            className={`mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl opacity-0 ${
-              isVisible ? "animate-fade-up [animation-delay:120ms]" : ""
-            }`}
-          >
+          <p className={`mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/75 ${fade}`} style={delay(120)}>
             {t("hero.sub")}
           </p>
-
-          <div
-            className={`mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row opacity-0 ${
-              isVisible ? "animate-fade-up [animation-delay:240ms]" : ""
-            }`}
-          >
-            <a
-              href="#contact"
-              className="rounded-xl bg-vlc-teal px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all duration-200 hover:bg-vlc-light-teal hover:shadow-xl active:scale-[0.97]"
-            >
-              {t("hero.cta.primary")}
-            </a>
-            <a
-              href="https://app.valentiasoftware.com/"
-              className="rounded-xl border-2 border-white/25 px-8 py-3.5 text-base font-semibold text-white transition-all duration-200 hover:border-white/50 hover:bg-white/10 active:scale-[0.97]"
-            >
-              {t("nav.login")}
-            </a>
-          </div>
         </div>
 
-        {/* Dashboard placeholder */}
-        <div
-          className={`mx-auto mt-20 max-w-5xl opacity-0 ${isVisible ? "animate-fade-up [animation-delay:400ms]" : ""}`}
-        >
-          <div className="relative rounded-2xl border border-white/10 bg-white/5 p-1 shadow-2xl shadow-black/20 backdrop-blur-sm">
-            <div className="flex items-center gap-2 px-4 py-3">
-              <div className="h-3 w-3 rounded-full bg-vlc-orange/60" />
-              <div className="h-3 w-3 rounded-full bg-vlc-light-teal/60" />
-              <div className="h-3 w-3 rounded-full bg-vlc-teal/40" />
+        <div className={`mx-auto mt-12 grid max-w-4xl gap-5 md:grid-cols-2 ${fade}`} style={delay(200)}>
+          {options.map((o) => (
+            <div
+              key={o.title}
+              className="flex flex-col rounded-2xl border border-white/15 bg-white/[0.06] p-6 text-left"
+            >
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-vlc-teal text-white">
+                  <o.icon className="h-5 w-5" strokeWidth={1.8} />
+                </span>
+                <span className="text-xs font-semibold uppercase tracking-widest text-vlc-light-teal">{o.tag}</span>
+              </div>
+              <h2 className="mt-4 font-display text-xl font-bold text-white">{o.title}</h2>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-white/70">{o.desc}</p>
+              <Link
+                to={o.to}
+                className={`mt-6 inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-colors active:scale-[0.97] ${
+                  o.primary
+                    ? "bg-vlc-teal text-white hover:bg-vlc-teal/90"
+                    : "border-2 border-white/30 text-white hover:border-white/60 hover:bg-white/10"
+                }`}
+              >
+                {o.cta} <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
-            <img src={imgDashboard} alt="Valentia Software dashboard overview" className="w-full rounded-xl" />
+          ))}
+        </div>
+
+        <p className={`mx-auto mt-6 flex max-w-4xl items-center justify-center gap-2 text-center text-sm text-white/70 ${fade}`} style={delay(260)}>
+          <Plug className="h-4 w-4 shrink-0 text-vlc-light-teal" />
+          {t("hero.coexist")}
+        </p>
+
+        <div className={`mx-auto mt-16 max-w-5xl ${fade}`} style={delay(400)}>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-1 shadow-2xl shadow-black/30">
+            <img src={imgDashboard} alt="Valentia platform dashboard" className="w-full rounded-xl" />
           </div>
         </div>
       </div>

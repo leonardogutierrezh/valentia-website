@@ -226,13 +226,13 @@ export default function ConsultingPage() {
                 to="/#contact"
                 className="rounded-xl bg-vlc-teal px-8 py-3.5 font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all hover:bg-vlc-light-teal active:scale-[0.97]"
               >
-                Book a 30-min call
+                Book a 30-Min Call
               </Link>
               <a
-                href="mailto:hello@valentia.software"
+                href="mailto:hello@valentiasoftware.com"
                 className="rounded-xl border border-white/25 px-8 py-3.5 font-semibold text-white transition-all hover:border-white/50 hover:bg-white/10 active:scale-[0.97]"
               >
-                hello@valentia.software
+                hello@valentiasoftware.com
               </a>
             </div>
           </div>

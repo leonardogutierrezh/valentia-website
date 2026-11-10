@@ -69,7 +69,7 @@ export default function Pricing() {
                 >
                   {tier.featured && (
                     <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                      <span className="rounded-full bg-gradient-vlc px-4 py-1 text-xs font-semibold text-white shadow">
+                      <span className="rounded-full bg-vlc-teal hover:bg-vlc-teal/90 px-4 py-1 text-xs font-semibold text-white shadow">
                         {t("pricing.popular")}
                       </span>
                     </div>
@@ -122,7 +122,7 @@ export default function Pricing() {
                     to="/#contact"
                     className={`mt-8 block rounded-xl py-3 text-center text-sm font-semibold transition-all duration-200 active:scale-[0.97] ${
                       tier.featured
-                        ? "bg-gradient-vlc text-white shadow-lg shadow-vlc-teal/30 hover:shadow-xl"
+                        ? "bg-vlc-teal hover:bg-vlc-teal/90 text-white shadow-lg shadow-vlc-teal/30 hover:shadow-xl"
                         : "border border-vlc-navy text-vlc-navy hover:bg-vlc-navy hover:text-white"
                     }`}
                   >
@@ -149,7 +149,7 @@ export default function Pricing() {
             </div>
             <Link
               to="/#contact"
-              className="shrink-0 rounded-xl bg-gradient-vlc px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all duration-200 hover:shadow-xl active:scale-[0.97]"
+              className="shrink-0 rounded-xl bg-vlc-teal hover:bg-vlc-teal/90 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all duration-200 hover:shadow-xl active:scale-[0.97]"
             >
               {t("pricing.band.cta")}
             </Link>

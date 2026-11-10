@@ -34,7 +34,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Pantalla de inicio de sesión de Valentia Software", wide: false },
       },
     ],
-    help: { text: "¿Necesitas ayuda? Escríbenos a", email: "hello@valentia.software" },
+    help: { text: "¿Necesitas ayuda? Escríbenos a", email: "hello@valentiasoftware.com" },
     alt: false,
   },
   {
@@ -67,7 +67,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Écran de connexion de Valentia Software", wide: false },
       },
     ],
-    help: { text: "Besoin d'aide ? Contactez-nous à", email: "hello@valentia.software" },
+    help: { text: "Besoin d'aide ? Contactez-nous à", email: "hello@valentiasoftware.com" },
     alt: true,
   },
   {
@@ -99,7 +99,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Valentia Software login screen", wide: false },
       },
     ],
-    help: { text: "Need help? Contact us at", email: "hello@valentia.software" },
+    help: { text: "Need help? Contact us at", email: "hello@valentiasoftware.com" },
     alt: false,
   },
   {
@@ -132,7 +132,7 @@ const sections = [
         img: { src: "/screenshots/valentia-login.jpg", alt: "Anmeldebildschirm von Valentia Software", wide: false },
       },
     ],
-    help: { text: "Benötigen Sie Hilfe? Kontaktieren Sie uns unter", email: "hello@valentia.software" },
+    help: { text: "Benötigen Sie Hilfe? Kontaktieren Sie uns unter", email: "hello@valentiasoftware.com" },
     alt: true,
   },
 ];
@@ -190,7 +190,7 @@ export default function Guide() {
               <ol className="space-y-10">
                 {s.steps.map((step, i) => (
                   <li key={i} className="flex gap-5">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-vlc text-sm font-bold text-white">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-vlc-teal hover:bg-vlc-teal/90 text-sm font-bold text-white">
                       {i + 1}
                     </div>
                     <div className="flex-1">
@@ -240,7 +240,7 @@ export default function Guide() {
             </div>
             <Link
               to="/#contact"
-              className="shrink-0 rounded-xl bg-gradient-vlc px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all duration-200 hover:shadow-xl active:scale-[0.97]"
+              className="shrink-0 rounded-xl bg-vlc-teal hover:bg-vlc-teal/90 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all duration-200 hover:shadow-xl active:scale-[0.97]"
             >
               {t("guide.band.cta")}
             </Link>

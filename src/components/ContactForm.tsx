@@ -60,7 +60,7 @@ export function ContactForm() {
       : `New inquiry from ${company}`;
 
     window.location.href =
-      "mailto:hello@valentia.software" +
+      "mailto:hello@valentiasoftware.com" +
       "?subject=" + encodeURIComponent(subject) +
       "&body=" + encodeURIComponent(body);
   };
@@ -165,7 +165,7 @@ export function ContactForm() {
 
           <button
             type="submit"
-            className="w-full rounded-xl bg-gradient-vlc py-3.5 text-base font-semibold text-white shadow-lg shadow-vlc-teal/20 transition-all duration-200 hover:shadow-xl hover:shadow-vlc-teal/30 active:scale-[0.97]"
+            className="w-full rounded-xl bg-vlc-teal hover:bg-vlc-teal/90 py-3.5 text-base font-semibold text-white shadow-lg shadow-vlc-teal/20 transition-all duration-200 hover:shadow-xl hover:shadow-vlc-teal/30 active:scale-[0.97]"
           >
             {t("contact.cta")}
           </button>
@@ -173,7 +173,7 @@ export function ContactForm() {
             {t("contact.note")}
           </p>
           <p className="text-center text-xs text-muted-foreground">
-            {t("contact.direct")} <a href="mailto:hello@valentia.software" className="font-medium text-vlc-teal hover:underline">hello@valentia.software</a>
+            {t("contact.direct")} <a href="mailto:hello@valentiasoftware.com" className="font-medium text-vlc-teal hover:underline">hello@valentiasoftware.com</a>
           </p>
         </form>
       </div>

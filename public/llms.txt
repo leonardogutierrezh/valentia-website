@@ -63,7 +63,7 @@ Valentia Software uses custom pricing based on portfolio size, PMS integration c
 - **Essential (Operations)** — protocols, owner module, cleaning & maintenance ops.
 - **Pro (Operations + Finance)** — adds owner statements, fee reconciliation, QuickBooks / Xero export.
 - **Scale (Full suite)** — all three modules plus LinkedIn automation, owner CRM & nurture, priority support.
-All tiers are quoted per setup. Contact hello@valentia.software for a quote.
+All tiers are quoted per setup. Contact hello@valentiasoftware.com for a quote.
 
 ---
 
@@ -89,8 +89,8 @@ Recent articles written by the Valentia team:
 
 - Website: https://www.valentiasoftware.com/
 - Platform login: https://app.valentiasoftware.com/
-- Email: hello@valentia.software
-- Support: hello@valentia.software
+- Email: hello@valentiasoftware.com
+- Support: hello@valentiasoftware.com
 - LinkedIn: https://www.linkedin.com/company/valent%C3%ADa-software/
 - Consulting page: https://www.valentiasoftware.com/consulting
 - Pricing page: https://www.valentiasoftware.com/pricing

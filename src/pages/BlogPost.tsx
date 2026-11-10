@@ -94,7 +94,7 @@ export default function BlogPost() {
           <div className="container mx-auto max-w-3xl px-6 py-20 text-center">
             <p className="text-muted-foreground">Post not found.</p>
             <Link to="/blog" className="mt-4 inline-block text-sm font-medium text-vlc-teal hover:underline">
-              ← Back to blog
+              ← Back to Blog
             </Link>
           </div>
         )}
@@ -149,13 +149,13 @@ export default function BlogPost() {
                   to="/#contact"
                   className="mt-5 inline-block rounded-xl bg-vlc-teal px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-vlc-teal/30 transition-all hover:bg-vlc-light-teal active:scale-[0.97]"
                 >
-                  Book a 30-min call
+                  Book a 30-Min Call
                 </Link>
               </div>
 
               <div className="mt-8">
                 <Link to="/blog" className="text-sm font-medium text-muted-foreground hover:text-vlc-teal">
-                  ← Back to blog
+                  ← Back to Blog
                 </Link>
               </div>
             </article>
