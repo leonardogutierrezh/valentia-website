@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import matter from "gray-matter";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { useI18n } from "@/lib/i18n";
@@ -12,6 +11,19 @@ interface FrontMatter {
   meta_description?: string;
   created?: string;
   language?: string;
+}
+
+// Minimal "key: value" frontmatter parser (gray-matter needs Node's Buffer).
+function parseFrontMatter(raw: string): { data: FrontMatter; content: string } {
+  const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+  if (!m) return { data: {}, content: raw };
+  const data: Record<string, string> = {};
+  for (const line of m[1].split(/\r?\n/)) {
+    const i = line.indexOf(":");
+    if (i === -1) continue;
+    data[line.slice(0, i).trim()] = line.slice(i + 1).trim().replace(/^["']|["']$/g, "");
+  }
+  return { data, content: m[2] };
 }
 
 type State =
@@ -43,8 +55,9 @@ export default function BlogPost() {
           const res = await fetch(url);
           if (!res.ok) continue;
           const raw = await res.text();
-          const { data, content } = matter(raw);
-          setState({ status: "ok", fm: data as FrontMatter, content });
+          const { data, content } = parseFrontMatter(raw);
+          // Drop the leading "# Title" since the header already shows it.
+          setState({ status: "ok", fm: data, content: content.replace(/^\s*#\s+.*\r?\n/, "") });
           return;
         } catch {
           continue;
