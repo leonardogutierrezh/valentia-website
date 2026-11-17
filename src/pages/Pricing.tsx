@@ -137,6 +137,22 @@ export default function Pricing() {
               <strong className="font-semibold text-foreground">{t("pricing.note.title")} </strong>
               {t("pricing.note.body")}
             </div>
+
+            {/* Calculator callout */}
+            <div className="mx-auto mt-6 max-w-3xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-2xl border border-vlc-teal/30 bg-vlc-teal/5 p-6">
+              <div>
+                <p className="text-sm font-semibold text-vlc-navy">{t("pricing.calc.label")}</p>
+                <p className="mt-1 text-sm text-muted-foreground">{t("pricing.calc.body")}</p>
+              </div>
+              <a
+                href="https://invest.valentiasoftware.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 rounded-xl border border-vlc-teal px-5 py-2.5 text-sm font-semibold text-vlc-teal hover:bg-vlc-teal hover:text-white transition-all duration-200 active:scale-[0.97]"
+              >
+                {t("pricing.calc.cta")}
+              </a>
+            </div>
           </div>
         </section>
 

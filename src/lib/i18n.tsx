@@ -154,6 +154,9 @@ const dict: Record<Lang, Record<string, string>> = {
     "pricing.band.h2": "Get your quote in 24 hours.",
     "pricing.band.p": "Tell us your portfolio size and current PMS. We'll send a tailored proposal.",
     "pricing.band.cta": "Contact Us",
+    "pricing.calc.label": "Are you a property owner?",
+    "pricing.calc.body": "Use our free investment calculator to estimate what your apartment could earn as a short-term rental.",
+    "pricing.calc.cta": "Open free calculator →",
 
     "guide.eyebrow": "Guide",
     "guide.h1a": "Connect Hostify with Valentia",
@@ -328,6 +331,9 @@ const dict: Record<Lang, Record<string, string>> = {
     "pricing.band.h2": "Tu cotización en 24 horas.",
     "pricing.band.p": "Cuéntanos el tamaño de tu portfolio y tu PMS actual. Te enviamos una propuesta a la medida.",
     "pricing.band.cta": "Contáctanos",
+    "pricing.calc.label": "¿Eres propietario?",
+    "pricing.calc.body": "Usa nuestra calculadora gratuita para estimar lo que podría ganar tu piso como alquiler vacacional.",
+    "pricing.calc.cta": "Abrir calculadora gratuita →",
 
     "guide.eyebrow": "Guía",
     "guide.h1a": "Conecta Hostify con Valentia",
